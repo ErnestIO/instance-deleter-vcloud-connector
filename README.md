@@ -4,8 +4,8 @@ Instance deleter vcloud connector aims to be an interface to create instances th
 
 ## Build status
 
-* master:  [![CircleCI Master](https://circleci.com/gh/ErnestIO/instance-deleter-vcloud-connector/tree/master.svg?style=svg)](https://circleci.com/gh/ErnestIO/instance-deleter-vcloud-connector/tree/master)
-* develop: [![CircleCI Develop](https://circleci.com/gh/ErnestIO/instance-deleter-vcloud-connector/tree/develop.svg?style=svg)](https://circleci.com/gh/ErnestIO/instance-deleter-vcloud-connector/tree/develop)
+* master:  [![CircleCI Master](https://circleci.com/gh/ernestio/instance-deleter-vcloud-connector/tree/master.svg?style=svg)](https://circleci.com/gh/ernestio/instance-deleter-vcloud-connector/tree/master)
+* develop: [![CircleCI Develop](https://circleci.com/gh/ernestio/instance-deleter-vcloud-connector/tree/develop.svg?style=svg)](https://circleci.com/gh/ernestio/instance-deleter-vcloud-connector/tree/develop)
 
 ## Installation
 
