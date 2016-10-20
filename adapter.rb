@@ -12,7 +12,7 @@ include Myst::Providers::VCloud
 
 def delete_instance(data)
   values = data.values_at(:datacenter_name, :client_name, :router_name, :network_name).compact
-  return false unless data[:instance_type] == 'vcloud' && values.length == 4
+  return false unless values.length == 4
 
   credentials = data[:datacenter_username].split('@')
   provider = Provider.new(endpoint:     data[:vcloud_url],
@@ -20,7 +20,7 @@ def delete_instance(data)
                           username:     credentials.first,
                           password:     data[:datacenter_password])
   datacenter  = provider.datacenter(data[:datacenter_name])
-  instance    = datacenter.compute_instance(data[:instance_name])
+  instance    = datacenter.compute_instance(data[:name])
   instance.tasks.each { |task| task.waitForTask(0, 1000) }
 
   instance.delete unless instance.vapp.nil?
